@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: #111; */
+  color: white;
+  font-family: "Afacad Flux", sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-image: url("./assets/photos/another-main-bg.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  padding-top: 1%;
+}
+
+nav img {
+  display: inline;
+  object-fit: contain;
+  object-position: center;
+  padding-left: 0.5rem;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  transition: color 0.3s linear;
+}
+
+.nav-items a:hover {
+ color: #f7902d;
+ cursor: pointer;
+}
+
+.nav-items button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #fb861a;
+  transition: background-color 0.3s linear;
+}
+
+.nav-items button:hover{
+    background-color: #fe8f28;
+    cursor: pointer;
+}
+
