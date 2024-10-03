@@ -5,34 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Agency with Dropdown</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
   </head>
   <body>
     <div class="wrapper">
-      <div class="main">
-        <!-- nav bar -->
-        <nav>
-          <img src="./assets/photos/logo.png" alt="" />
-<!-- nav -sec -->
-          <div class="nav-items">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Pages+</a>
-            <button class="book-now">Book Now</button>
-          </div>
-        </nav>
-
+      <!-- nav bar -->
+      <nav>
+        <img src="./assets/photos/logo.png" alt="" />
+        <!-- nav -sec -->
+        <div class="nav-items">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Pages+</a>
+          <button class="book-now">Book Now</button>
+        </div>
+      </nav>
      
+      <!-- hero sec -->
+      <div class="main">
+      
+        <!-- hero text -->
+        <div class="hero-text">
+          <p class="head">EXPLORE</p>
+          <p class="head sub-head">THE WORLD</p>
+
+          <p class="des">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod
+            <br />
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <div class="discover">
+            <button class="discover-btn" id="">Discover Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- main sec -->
+      <div class="second">
+        <!-- drop Sections -->
+          <div class="dropdown-Sections">
+            <div class="section section-items">
+              <input type="text" id="name" placeholder="Name" />
+  
+              <!-- Destination -->
+              <select name="destination" id="destination">
+                <option value="">Destination</option>
+                <option value="">Sydney</option>
+                <option value="">Tokyo</option>
+                <option value="">Paris</option>
+              </select>
+  
+              <input type="text" class="date" id="date" placeholder="Select a date" />
+             <button>Book Now</button>
+            </div>
+  
+        
+          </div>
+
+          <!-- girla and content  -->
+
+          <div class="girl-content">
+
+            <div class="left">
+
+              <p class="about">About Us</p>
+              <h2>
+                With us, you are <br>
+                always in for a <br>
+                pleasant surprise <br>
+              </h2>
+              <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint molestiae officia expedita eveniet consequatur </p>
+              <button>View More</button>
+            </div>
+  
+            <div class="right">
+              <img src="./assets/photos/girl-img.png" style="height: 550px;">
+            </div>
+  
+          </div>
+        
+        
+      
+        
 
         
       </div>
-
-
-    
-      
-
-
-         
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      flatpickr("#date", {
+        dateFormat: "d-m-Y",
+      });
+    </script>
   </body>
 </html>
